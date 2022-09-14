@@ -1,0 +1,54 @@
+package cursojava;
+
+public class Fundamentos {
+
+	public static void main(String[] args) {
+		String nome= "Charliton lessa";
+		int idade= 35;
+		String sexo="masculino";
+		System.out.println("Olá, meu nome é "+ nome+ ", tenho " +idade+" anos de idade e sou do sexo "
+				+ sexo + ".");
+		
+		//    estrutura de if else
+		if (idade<31) {
+			System.out.println(" VocÊ ainda não chegou aos 31");
+		
+		}else {
+			System.out.println("VocÊ já passou dos  31 anos");
+			
+			// Estrutura Switch case:
+			
+			int teste = 6;
+			switch(teste) {
+			case 1: 
+				System.out.println(" Você escolheu a opção 1");
+				break;
+				
+			case 2: 
+				System.out.println(" Você escolheu a opção 2");
+				break;
+				
+			case 3: 
+				System.out.println(" Você escolheu a opção 3");
+				break;
+				
+			default: 
+				System.out.println("Você não escolheu nenhuma opção válida");
+				break;
+			
+			}
+		// USO DO FOR:
+			for (int novoFor=1;novoFor<=11;novoFor ++) {
+				System.out.println(novoFor);
+			}
+		// Uso da estrutura WHILE:
+			int contador=1;
+			while (contador<=10) {
+				System.out.println(contador);
+				contador ++;
+			}
+		}
+
+	}
+
+}
