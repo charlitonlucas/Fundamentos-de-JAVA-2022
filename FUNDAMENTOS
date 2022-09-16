@@ -47,6 +47,41 @@ public class Fundamentos {
 				System.out.println(contador);
 				contador ++;
 			}
+//Criação da Classe Carro e dos métodos.
+		package poo;
+
+import java.util.Random;
+
+//Criação da classe carro
+public class Carro {
+	String modelo;
+	int ano;
+	String cor;
+// criação da classe random, que será utilizada para gerar número de chassi	
+// é necessário importar a classe Random, utilizando> ctrl + shift + o.	
+	Random gerador= new Random ();
+	int chassi= gerador.nextInt(1000);
+	
+		
+// criação do método Construtor SEM PARâMETROS. Esse método vai aparecer em todos os objetos dessa classe
+	public Carro() {
+		System.out.println("O número do chassi é: "+chassi);
+	}
+	
+
+//criação dos métodos
+	void ligar() {
+		System.out.println("Motor Ligado");
+	}
+	void acelerar () {
+		System.out.println("Vruuuummmmmm");
+	}
+	void parar () {
+		System.out.println("iiiiiiirrrrrr");
+	}
+	void desligar() {
+		System.out.println("Motor desligado");
+	}	
 		}
 
 	}
