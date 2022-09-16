@@ -68,6 +68,12 @@ public class Carro {
 		System.out.println("O número do chassi é: "+chassi);
 	}
 	
+// criação do método construtor COM PARÂMETROS.
+	public Carro(int ano,String cor) {
+		this.ano=ano;
+		this.cor= cor;
+	}	
+	
 
 //criação dos métodos
 	void ligar() {
@@ -81,7 +87,61 @@ public class Carro {
 	}
 	void desligar() {
 		System.out.println("Motor desligado");
+	}
+package poo;
+
+public class Uno {
+
+	public static void main(String[] args) {
+		
+		//Criação do objeto Uno dentro da classe Carro, com os parâmetros ano e cor
+		Carro Uno= new Carro(1996,"vermelho");
+		
+		System.out.println(" Parabéns! , a cor do Uno é "+ Uno.cor);
+		System.out.println("E o ano dele é: "+ Uno.ano);
+		Uno.ligar();
+		Uno.acelerar();
+		Uno.parar();
+		Uno.desligar();
+
+//Criação da classe Principal Aviao. Essa classe vai herdar a classe Carro.
+package poo;
+
+//" Avião extends Carro- significa que Avião vai herdas os métodos e atributos da Classe Carro.
+public class Aviao extends Carro {
+	
+	double tamanhoDoAviao = 88.50;
+	int numDeAssentos= 100;
+	
+	void aterrizar() {
+		System.out.println("Aviao aterrizando;");
+	}
+package poo;
+
+//A classe AviaoCesna é um objeto da Classe Aviao.
+public class AviaoCesna {
+
+	public static void main(String[] args) {
+		//Criação do objeto AviaoCesna na classe Aviao
+		Aviao AviaoCesna= new Aviao();
+		
+		AviaoCesna.ano=2020;
+		AviaoCesna.cor="branco";
+		AviaoCesna.numDeAssentos= 100;
+		AviaoCesna.tamanhoDoAviao=50.50;
+		
+		System.out.println(" A cor do avião é: "+ AviaoCesna.cor);
+		System.out.println(" O ano do Cesna é "+ AviaoCesna.ano);
+		System.out.println(" Ele possui "+AviaoCesna.numDeAssentos+ " assentos e mede "+ AviaoCesna.tamanhoDoAviao+" m.");
+		
+	    AviaoCesna.ligar();
+	    AviaoCesna.acelerar();
+	    AviaoCesna.aterrizar();
+		
+
 	}	
+}		
+	
 		}
 
 	}
