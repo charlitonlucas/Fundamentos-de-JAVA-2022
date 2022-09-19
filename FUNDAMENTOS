@@ -140,7 +140,36 @@ public class AviaoCesna {
 		
 
 	}	
-}		
+//criação das CONTAS no package CONTAS
+
+package contas;
+
+public class Conta {
+	
+	public String cliente;
+	public int agencia ;
+	public double saldo;
+	public double saque;
+	
+	//construtor do objeto "Conta"
+	public Conta() {
+		System.out.println("Seja bem vindo ao Banco do Charliton");
+		
+	}
+		
+	// método exibir
+    public void exibirSaldo() {
+    	System.out.println("Olá " + cliente + ", Seu saldo é de "+ saldo);
+    }
+    void sacar(double valor) {
+    	saldo-=valor;
+    	System.out.println("Débito: R$: "+ valor);
+    }
+    void sacar(double valor) {
+    	saldo-=valor;
+    	System.out.println("Débito: R$: "+ valor);
+		
+}
 	
 		}
 
